@@ -1,0 +1,170 @@
+/* Resetting basic styles and setting global font */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(
+    135deg,
+    #e0eafc,
+    #cfdef3
+  ); /* Soft gradient from light blue to pale blue */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-smooth: always;
+}
+
+/* Card styling */
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(
+    135deg,
+    #00feba,
+    #5b548a
+  ); /* Vibrant gradient for contrast */
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* Adds a slight lift and scale effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Deepens the shadow for more depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooths out the animation */
+}
+
+/* Search container styling */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Search input styling */
+.search input {
+  flex: 1;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #ebfffc;
+  color: #555;
+  font-size: 18px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+.search input:focus {
+  background: #dff7f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Search button styling */
+.search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #eef5fc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.search button:hover {
+  background: #f4f7f8;
+  transform: scale(1.1);
+}
+
+/* Search button icon styling */
+.search button img {
+  width: 20px;
+  height: auto;
+}
+
+/* Weather icon styling */
+.weather-icon {
+  width: 150px;
+  margin-top: 30px;
+}
+
+/* Temperature display styling */
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 15px;
+  line-height: 1;
+}
+
+/* City name styling */
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+/* Weather details container */
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+/* Individual detail column styling */
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Detail icons */
+.col img {
+  width: 40px;
+}
+
+/* Humidity and wind details styling */
+.humidity,
+.wind {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: -6px;
+}
+
+/* Weather section visibility */
+.weather {
+  display: none;
+}
+
+.show-weather {
+  display: block;
+}
+
+/* Error message styling */
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #f00;
+  display: none;
+}
